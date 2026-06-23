@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TestAnimal",
+            "request": "launch",
+            "mainClass": "Assignment.TestAnimal",
+            "projectName": "Week-3_349414cd"
+        },
+        {
+            "type": "java",
+            "name": "ConstructorOverriding",
+            "request": "launch",
+            "mainClass": "ConstructorOverriding",
+            "projectName": "Week-3_349414cd"
+        },
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "Student",
+            "projectName": "Week-3_349414cd"
+        },
+        {
+            "type": "java",
+            "name": "B",
+            "request": "launch",
+            "mainClass": "pack2.B",
+            "projectName": "Week-3_349414cd"
+        },
+        {
+            "type": "java",
+            "name": "StringBuffers",
+            "request": "launch",
+            "mainClass": "StringBuffers",
+            "projectName": "Week-3_349414cd"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
