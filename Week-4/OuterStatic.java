@@ -10,7 +10,7 @@ public class OuterStatic {
         }
     }
     public static void main(String[] args) {
-        OuterStatic.Inner data=new OuterStatic.Inner();
+        OuterStatic.Inner data=new Inner();
         data.msg();
         data.msg1();
     }
