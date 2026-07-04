@@ -15,6 +15,6 @@ class classElement{
     } 
     static{
         
+        System.out.println("I am Static block");
     }
-    System.out.println("");
 }
