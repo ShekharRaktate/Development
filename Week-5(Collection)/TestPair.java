@@ -7,9 +7,8 @@ public class TestPair {
         Pair arr[]=new Pair[4];
         
         for (int i = 0; i < arr.length; i++) {
-            System.out.println("Enter the element at index: "+i);
-            String a=sc.nextLine();
-            arr[i]=sc.nextInt();
+            System.out.println("Enter the element at index "+i+" : ");
+            Pair arr[i]=sc.nextLine();
         }
         arr[0]=new Pair("Sai",2);
         arr[1]=new Pair("Ram",1);
