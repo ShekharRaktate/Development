@@ -1,0 +1,6 @@
+com\app\beans\ColorFactory.class
+com\app\beans\User.class
+com\app\test\Client.class
+com\app\beans\College.class
+com\app\beans\FruitStore.class
+com\app\beans\Person.class

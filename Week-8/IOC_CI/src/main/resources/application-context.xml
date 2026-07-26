@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- bean definitions here -->
+		<bean class="com.app.beans.User" id="user">
+		<property name="names">
+		<list>
+		<value>Shekhar </value>
+		<value> Kiran</value>
+		<value>Raj</value>
+		</list>
+		</property>
+		</bean>
+		<bean class="com.app.beans.Person" id="person">
+		<property name="phones">
+		<set>
+		<value>1234567890 </value>
+		<value>0987654321</value>
+		<value>0987612345</value>
+		</set>
+		</property>
+		</bean>
+		<bean class="com.app.beans.FruitStore" id="fruit">
+		<property name="fruitColors">
+		<props>
+		<prop key="apple">red</prop>
+		<prop key="Banana">yellow</prop>
+		<prop key="Strawberry">pink</prop>
+		</props>
+		</property>
+		</bean>
+		<bean class="com.app.beans.ColorFactory" id="color">
+		<property name="colors">
+		<array>
+		<value>red</value>
+		<value>yellow</value>
+		<value>green</value>
+		</array>
+		</property>
+		</bean>
+		<bean class="com.app.beans.College" id="college">
+		<property name="facultySubject">
+		<map>
+		<entry key="Nana" value="Java"/>
+		<entry>
+		<key><value>Bharti</value></key><value>Core Java</value>
+		</entry>
+		<entry key="Raj">
+		<value>Spring</value>
+		</entry>
+		</map>
+		</property>
+		<property name="keyValue">
+		<map>
+        <entry key="sysDate" value-ref="dt"/>
+        <entry key="dt" value="today"/>
+        <entry>
+            <key><ref bean="person"/></key>
+            <ref bean="user"/>
+        </entry>
+    	</map>
+		</property>
+		</bean>
+		<bean id="dt" class="java.util.Date"/>
+		
+</beans>

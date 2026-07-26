@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!-- bean definitions here -->
+	<bean class="com.app.Student" name="student">
+	<property name="id" value="102"/>
+	<property name="name" value="Shekhar Raktate"/>
+	<property name="mobile" value="1234567890"/>
+	<property name="marks" value="12.32"/>
+	<property name="adress" value="Pune"/>
+
+	</bean>
+</beans>

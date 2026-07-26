@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <!-- bean target class -->
+	<bean class="com.app.service.LoanCalculator" id="iac"/>
+	   <!-- bean AOP Aspect -->
+	<bean class="com.app.aspect.CacheAdvice" id="cache"/>
+	<bean class="com.app.aspect.LogAroundAdvice" id="log"/>
+	<bean class="com.app.aspect.PerformanceMonitoringAdvoice" id="pmAdvice"/>
+	<bean class="org.springframework.aop.framework.ProxyFactoryBean" id="proxy">
+	<property name="target" ref="iac"/>
+	<property name="interceptorNames">
+	<list>
+	<value>cache</value>
+	<value>log</value>
+	<value>pmAdvice</value>
+	</list>
+	</property>
+	</bean>
+	
+</beans>
