@@ -1,0 +1,26 @@
+<h1>Student Dashboard</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            <th>Action</th>     
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let std of students">
+            <td>{{std.sid}}</td>
+            <td>{{std.name}}</td>
+            <td>{{std.email}}</td>
+            <td>{{std.mobile}}</td>
+            <td>{{std.address}}</td>
+            <td>
+                <button (click)="editStudent(std.sid)">Edit</button>
+                <button (click)="delStudents(std.sid)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

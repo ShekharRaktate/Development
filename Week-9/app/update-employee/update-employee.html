@@ -1,0 +1,16 @@
+<h1>Update Employee</h1>
+
+<form (ngSubmit)="updateEmployee(userResp)" #formRef="ngForm">
+  
+  <label>Name:</label>
+  <input type="text" #name [(ngModel)]="userResp.name" name="name" required>
+
+  <label>Address:</label>
+  <input type="text" [(ngModel)]="userResp.address" name="address" required>
+
+  <label>Mobile:</label>
+  <input type="text" [(ngModel)]="userResp.mobile" name="mobile" required>
+
+  <button type="submit">Update Employee</button>
+
+</form>

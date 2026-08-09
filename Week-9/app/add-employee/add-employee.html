@@ -1,0 +1,14 @@
+
+    <form #personData="ngForm" (ngSubmit)="addEmployee(personData)" >
+       Name:
+   
+        <input type="text" #name (ngModel)="name" name="name" placeholder="name"><br><br>
+    
+        Mobile:
+ 
+        <input type="text" #mobile (ngModel)="mobile" name="mobile" placeholder="mobile"><br><br>
+     Address:  
+          <input type="text" #address (ngModel)="address" name="address" placeholder="address"><br><br>
+
+    <input type="submit" value="ADD EMPLOYEE">
+    </form>
